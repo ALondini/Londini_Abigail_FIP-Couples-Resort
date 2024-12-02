@@ -106,12 +106,14 @@ textarea {
 }
 
 
-/* 3. ---Main Hero Image--- */
+/* 3. ---Main Hero Images--- */
 
 #hero {
     background: url(../images/5_star.jpg) no-repeat;
     height: 200px;
 }
+
+/* Images for Rooms Page */
 
 #hero-rooms {
     background: url(../images/room_styles.jpg) no-repeat;
@@ -148,15 +150,68 @@ textarea {
     height: 200px;
 }
 
+
+/* Images for Spa Services Page */
+
 #hero-spa {
     background: url(../images/spa_services.jpg) no-repeat;
     height: 200px;
 }
 
+#spa-massage-therapy {
+    background: url(../images/massage_therapy.jpg) no-repeat;
+    height: 200px;
+}
+
+#spa-hot-stones {
+    background: url(../images/hot_stones.jpg) no-repeat;
+    height: 200px;
+}
+
+#spa-hand-foot {
+    background: url(../images/hand_foot.jpg) no-repeat;
+    height: 200px;
+}
+
+#spa-scrubs {
+    background: url(../images/scrubs.jpg) no-repeat;
+    height: 200px;
+}
+
+#spa-waxing {
+    background: url(../images/waxing.jpg) no-repeat;
+    height: 200px;
+}
+
+#spa-features {
+    background: url(../images/spa_features.jpg) no-repeat;
+    height: 200px;
+}
+
+#spa-policies {
+    background: url(../images/spa_policies.jpg) no-repeat;
+    height: 200px;
+}
+
+
+/* Images for Reservations Page */
+
 #hero-reservations {
     background: url(../images/reservations.jpg) no-repeat;
     height: 200px;
 }
+
+#booking-info {
+    background: url(../images/booking_info.jpg) no-repeat;
+    height: 200px;
+}
+
+#other-info {
+    background: url(../images/other_info.jpg) no-repeat;
+    height: 200px;
+}
+
+
 
 .book-now {
     background-color: #9a2018;
@@ -185,7 +240,7 @@ textarea {
     margin: 40px;
     margin-top: 10px;
     margin-bottom: 70px;
-    justify-self: right;
+    justify-self: center;
 }
 
 #hero-heading-box {
@@ -199,6 +254,7 @@ textarea {
 .hero-img-h2,
 .hero-img-h3 {
     background: #fff;
+    width: fit-content;
     padding: 10px 15px;
     font-size: 14px;
 }
@@ -374,6 +430,10 @@ textarea {
     margin-bottom: 16px;
 }
 
+.faq-items-rooms {
+    margin-bottom: 16px;
+}
+
 .faq-items h3 {
     background: #e8e7e7;
     padding: 16px;
@@ -386,7 +446,18 @@ textarea {
     list-style-type: none;
 }
 
+.faq-items-rooms ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 .faq-items li {
+    padding: 8px 0;
+    border-bottom: 1px solid #9a2018;
+}
+
+.faq-items-rooms li {
     padding: 8px 0;
     border-bottom: 1px solid #9a2018;
 }
@@ -395,9 +466,22 @@ textarea {
     border-bottom: none;
 }
 
+.faq-items-rooms li:last-of-type {
+    border-bottom: none;
+    margin-bottom: 70px;
+}
+
+.faq-items-drop li:last-of-type {
+    border-bottom: 1px solid #9a2018;
+}
+
 .faq-items a {
     color: inherit;
     font-size: 13px;
+}
+
+.faq-items-rooms a {
+    color: inherit;
 }
 
 #faq-text-con {
@@ -409,8 +493,20 @@ textarea {
     font-weight: bold;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .line-space {
-    padding-bottom: 15px;
+    padding-bottom: 20px;
+}
+
+.line-spaces {
+    padding-bottom: 70px;
+}
+
+.line-spacess {
+    padding-bottom: 50px;
 }
 
 
@@ -431,14 +527,17 @@ details summary::-webkit-details-marker {
 }
 
 details summary::before {
-    content: '▶';
+    content: url(../images/dropdown_arrow.svg);
+    transform: rotate(-90deg);
     margin-right: 0.5em;
     font-size: 2rem;
     display: inline-block;
+    transition: transform 0.3s ease;
 }
 
 details[open] summary::before {
-    content: '▼';
+    transform: rotate(0deg);
+    content: url(../images/dropdown_arrow.svg);
 }
 
 details summary h3 {
@@ -487,12 +586,12 @@ details summary h3 {
     margin-bottom: 25px;
 }
 
-#contact-hero-form form {
+.contact-hero-form form {
     display: flex;
     flex-direction: column;
 }
 
-#contact-hero-form input,
+.contact-hero-form input,
 textarea {
     /* formating the form */
     padding: 22px;
@@ -503,18 +602,39 @@ textarea {
     font: inherit;
 }
 
-#contact-hero-form textarea {
+.contact-hero-form textarea {
     height: 250px;
 }
 
-#contact-hero-form input[type="submit"] {
+.contact-hero-form input[type="submit"] {
     padding: 12px;
     background: #9a2018;
     color: #fff;
     border: none;
     /* transition: all 200ms ease-in; */
-    width: 150px;
+    width: 200px;
     align-self: flex-end;
+}
+
+select {
+    padding: 22px;
+    border: 2px solid #d6d6d6;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: inherit;
+    font: inherit;
+    appearance: none;
+    background-image: url(../images/dropdown_arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right 20px center;
+    background-size: 16px;
+}
+
+.select-wrapper select {
+    width: 100%;
+    appearance: none;
+    padding-right: 40px;
 }
 
 
