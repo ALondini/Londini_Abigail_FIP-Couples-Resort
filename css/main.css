@@ -109,7 +109,52 @@ textarea {
 /* 3. ---Main Hero Image--- */
 
 #hero {
-    background: url(../images/hero-main.jpg) no-repeat;
+    background: url(../images/5_star.jpg) no-repeat;
+    height: 200px;
+}
+
+#hero-rooms {
+    background: url(../images/room_styles.jpg) no-repeat;
+    height: 200px;
+}
+
+#rooms-chateaus {
+    background: url(../images/chateaus.jpg) no-repeat;
+    height: 200px;
+}
+
+#rooms-villas {
+    background: url(../images/villas.jpg) no-repeat;
+    height: 200px;
+}
+
+#rooms-masters {
+    background: url(../images/masters.jpg) no-repeat;
+    height: 200px;
+}
+
+#rooms-chalets {
+    background: url(../images/chalets.jpg) no-repeat;
+    height: 200px;
+}
+
+#rooms-exotics {
+    background: url(../images/exotics.jpg) no-repeat;
+    height: 200px;
+}
+
+#rooms-juniors {
+    background: url(../images/juniors.jpg) no-repeat;
+    height: 200px;
+}
+
+#hero-spa {
+    background: url(../images/spa_services.jpg) no-repeat;
+    height: 200px;
+}
+
+#hero-reservations {
+    background: url(../images/reservations.jpg) no-repeat;
     height: 200px;
 }
 
@@ -134,7 +179,20 @@ textarea {
     height: 67px;
 }
 
+.read-more-button {
+    height: 40px;
+    width: 200px;
+    margin: 40px;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    justify-self: right;
+}
+
 #hero-heading-box {
+    align-self: end;
+}
+
+.heading-box {
     align-self: end;
 }
 
@@ -152,7 +210,7 @@ textarea {
 }
 
 .line-separator {
-    margin-top: 20px;
+    margin-top: -3px;
     border-top: solid 3px #CF6666;
     padding-top: 20px;
 }
@@ -217,7 +275,7 @@ textarea {
 }
 
 #why-choose-us-hero-con {
-    background: url(../images/why-choose-us-hero.jpg) no-repeat;
+    background: url(../images/why_choose_us2.jpg) no-repeat;
     height: 195px;
 }
 
@@ -274,7 +332,7 @@ textarea {
 /* 6. ---About & FAQ--- */
 
 #about-hero-con {
-    background: url(../images/about-us-hero.jpg) no-repeat;
+    background: url(../images/lake.jpg) no-repeat;
     height: 195px;
 }
 
@@ -333,6 +391,10 @@ textarea {
     border-bottom: 1px solid #9a2018;
 }
 
+.faq-items li:last-of-type {
+    border-bottom: none;
+}
+
 .faq-items a {
     color: inherit;
     font-size: 13px;
@@ -343,8 +405,13 @@ textarea {
     margin-bottom: 20px;
 }
 
+.bold {
+    font-weight: bold;
+}
 
-
+.line-space {
+    padding-bottom: 15px;
+}
 
 
 
@@ -393,7 +460,7 @@ details summary h3 {
 /* 7. ---Contact--- */
 
 #contact-hero-con {
-    background: url(../images/contact-hero.jpg);
+    background: url(../images/contact.jpg) no-repeat;
     height: 195px;
 }
 
