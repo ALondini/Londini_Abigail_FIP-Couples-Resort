@@ -19,9 +19,9 @@ Couples Resort Responsive Build
 
 /* 1. ---General Styles--- */
 
-#mobile-outline {
+#desktop-outline {
     outline: 20px solid #333;
-    max-width: 412px;
+    max-width: 1280px;
     margin: 20px auto 20px auto;
     border-radius: 10px;
 }
@@ -151,6 +151,49 @@ textarea {
 }
 
 
+/* Images for Rooms Desktop Page */
+
+#hero-rooms-desktop {
+    background: url(../images/room_styles_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#rooms-chateaus-desktop {
+    background: url(../images/chateaus_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#rooms-villas-desktop {
+    background: url(../images/villa_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#rooms-masters-desktop {
+    background: url(../images/masters_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#rooms-chalets-desktop {
+    background: url(../images/chalets_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#rooms-exotics-desktop {
+    background: url(../images/exotics_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#rooms-juniors-desktop {
+    background: url(../images/juniors_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+#contact-hero-con-desktop {
+    background: url(../images/contact_desktop.jpg) no-repeat;
+    height: 450px;
+}
+
+
 /* Images for Spa Services Page */
 
 #hero-spa {
@@ -254,19 +297,23 @@ textarea {
 .hero-img-h2,
 .hero-img-h3 {
     background: #fff;
-    width: fit-content;
-    padding: 10px 15px;
-    font-size: 14px;
+    width: 445px;
+    height: 100px;
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 30px;
 }
 
 .hero-img-h2 span,
 .hero-img-h3 span {
     color: #9a2018;
-    font-size: 12px;
+    font-size: 20px;
 }
 
-.line-separator {
+.line-separator-heading {
+    width: 385px;
     margin-top: -3px;
+    margin-left: 20px;
     border-top: solid 3px #CF6666;
     padding-top: 20px;
 }
@@ -428,6 +475,7 @@ textarea {
 
 .faq-items {
     margin-bottom: 16px;
+    /* padding-left: 30px; */
 }
 
 .faq-items-rooms {
@@ -507,6 +555,14 @@ textarea {
 
 .line-spacess {
     padding-bottom: 50px;
+}
+
+/* .padding-left {
+    padding-left: 30px;
+} */
+
+.checkbox-padding {
+    padding-left: 90px;
 }
 
 
@@ -745,7 +801,7 @@ ul {
 /* 8. ---Footer--- */
 
 #footer-hero {
-    background-image: url(../images/footer.jpg);
+    background-image: url(../images/footer_desktop.jpg);
     background-repeat: no-repeat;
     color: #fff;
     font-size: 12px;
