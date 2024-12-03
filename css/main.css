@@ -50,7 +50,7 @@ textarea {
 /* 2. ---Main Nav--- */
 
 #main-nav label img {
-    /* This is a decendant selector */
+    /* This is a decendant selector  */
     width: 20px;
     height: 20px;
     margin-top: 15px;
@@ -65,7 +65,7 @@ textarea {
 }
 
 #main-nav input:checked~#burger-con {
-    /*   ~ sibling selector   */
+    /* ~ sibling selector    */
     display: block;
 }
 
@@ -297,6 +297,14 @@ textarea {
 .hero-img-h2,
 .hero-img-h3 {
     background: #fff;
+    width: fit-content;
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.hero-img-h2-desktop,
+.hero-img-h3-desktop {
+    background: #fff;
     width: 445px;
     height: 100px;
     padding-top: 20px;
@@ -307,11 +315,24 @@ textarea {
 .hero-img-h2 span,
 .hero-img-h3 span {
     color: #9a2018;
+    font-size: 12px;
+}
+
+.hero-img-h2-desktop span,
+.hero-img-h3-desktop span {
+    color: #9a2018;
     font-size: 20px;
 }
 
+.line-separator {
+    width: fit-content;
+    margin-top: -3px;
+    margin-left: 15px;
+    border-top: solid 3px #CF6666;
+    padding-top: 20px;
+}
+
 .line-separator-heading {
-    width: 385px;
     margin-top: -3px;
     margin-left: 20px;
     border-top: solid 3px #CF6666;
@@ -486,6 +507,29 @@ textarea {
     background: #e8e7e7;
     padding: 16px;
     font-size: 16px;
+}
+
+@media (min-width: 1024px) {
+    .faq-items-container {
+        display: flex;
+        /* Ensures lists are side-by-side */
+        gap: 50px;
+        /* Adds spacing between the two lists */
+        width: 100%;
+        /* Ensures full width usage */
+    }
+
+    .faq-items {
+        flex: 1;
+        /* Each list takes equal space */
+    }
+
+    .faq-items ul li {
+        line-height: 1.8;
+        /* Increase spacing between lines for readability */
+        padding-bottom: 10px;
+        /* Optional: Adds extra space under each list item */
+    }
 }
 
 .faq-items ul {
