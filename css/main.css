@@ -555,7 +555,6 @@ details summary h3 {
 
 
 
-
 /* 7. ---Contact--- */
 
 #contact-hero-con {
@@ -611,10 +610,87 @@ textarea {
     background: #9a2018;
     color: #fff;
     border: none;
-    /* transition: all 200ms ease-in; */
     width: 200px;
     align-self: flex-end;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: none;
 }
+
+
+/* Animation(s) on Send buttons */
+
+/* Glow animation */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px #333;
+    }
+
+    50% {
+        box-shadow: 0 0 20px #9a2018;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #333;
+    }
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply animations to the send buttons */
+
+.contact-hero-form input[type="submit"] {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contact-hero-form input[type="submit"]:hover {
+    animation: glow 1s ease-in-out infinite, pulse 1s infinite ease-in-out;
+}
+
+
+/* @keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    75% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.contact-hero-form input[type="submit"]:hover {
+    animation: bounce 1s infinite;
+} */
+
 
 select {
     padding: 22px;
@@ -635,6 +711,34 @@ select {
     width: 100%;
     appearance: none;
     padding-right: 40px;
+}
+
+
+/* Checkbox */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#checkbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#checkbox input[type="checkbox"]:checked+span {
+    color: inherit;
+    position: relative;
+}
+
+#checkbox input[type="checkbox"]:checked+span::after {
+    text-decoration: none;
+    content: "🤩";
+    margin-left: 10px;
+    position: absolute;
+    left: 100%;
 }
 
 
